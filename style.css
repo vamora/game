@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5f1fb;
+}
+
+h1 {
+
+}
+
+p {
+
+}
+
+canvas {
+  display: block;
+  margin: 100px auto;
+  border-style: dotted;
+  border-color: white;
+  border-width: 5px;
+}
