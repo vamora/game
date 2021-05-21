@@ -15,4 +15,11 @@ class PaletaG {
     this.y++;
     this.speed;
   }
+
+  reset() {
+    this.r = 70;
+    this.x = random(w);
+    this.y = 0 - this.r;
+    this.speed = 8;
+}
 }

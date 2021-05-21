@@ -3,6 +3,7 @@ class PaletaBad {
     this.r = 50;
     this.x = random(w);
     this.y = 0 - this .r;
+
   }
 
   display() {

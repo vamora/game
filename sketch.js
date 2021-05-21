@@ -170,6 +170,16 @@ function level1() {
   }
   text('SCORE: ' + points, 500, h - 550);
 
+  // if (points >= 1) {
+  //   state = 'check in'
+  // } else if (points >= 3){
+  //   state = 'you win';
+  // }
+
+  if (points >= 35) {
+    state = 'you win'
+  }
+
 }
 function level1MouseClicked() {
   // points ++;
@@ -178,6 +188,25 @@ function level1MouseClicked() {
   // if (points >= 10){
   //   state = 'you win';
   // }
+  //if (state === 'check in' || state === 'you win')
+}
+
+
+function checkIn(){
+  background(254, 200, 201);
+  textSize(50);
+  stroke(255);
+  fill(255);
+  text('BREAK TIME?', w/2, h/2);
+
+  textSize(35);
+  text('YES', 200, 380);
+  text('NO', 400, 380);
+
+  textSize(20);
+  text('* PLEASE SELECT *', w/2, h * 3/4);
+  // paletasG.splice(1);
+  // paletasG[0].reset();
 }
 
 function youWin(){
@@ -185,13 +214,26 @@ function youWin(){
   textSize(50);
   stroke(255);
   fill(255);
-  text('YOU WIN!', w/2, h/2);
+  text('YOU WIN?', w/2, h/2);
+
+  image(paletaBlueImg, 85, 350, 80, 80);
+  image(paletaGreenImg, 170, 350, 80, 80);
+  image(paletaPurpleImg, 255, 350, 80, 80);
+  image(paletaRedImg, 340, 350, 80, 80);
+  image(paletaYellowImg, 425, 350, 80, 80);
+
 
   textSize(20);
-  text('* CLICK TO RESTART *', w/2, h * 3/4);
+  text('* CLICK TO DO IT ALL OVER AGAIN! *',w/2, h - 100);
+
+  textSize(13);
+  text('I ADMIRE YOUR PATIENCE :)', 300, 550);
+
 }
 
 function youWinMouseClicked(){
   state = 'level 1';
   points = 0;
+  // paletasG.splice(1);
+  // paletas[0].reset();
 }

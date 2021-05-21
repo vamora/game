@@ -7,7 +7,7 @@ class PaletaY {
   }
 
   display() {
-    image(paletaRedImg, this.x, this.y, this.r, this.r);
+    image(paletaYellowImg, this.x, this.y, this.r, this.r);
   }
 
   move() {
