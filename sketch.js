@@ -176,7 +176,7 @@ function level1() {
   //   state = 'you win';
   // }
 
-  if (points >= 35) {
+  if (points >= 25) {
     state = 'you win'
   }
 
